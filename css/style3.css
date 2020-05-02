@@ -26,7 +26,7 @@ h1{
 a {text-decoration: none; color: #333; border-bottom: 3px solid #333;}
 a:hover {color: #0068FF; border-bottom: 3px solid #0068FF}
 p {font-weight: 200; font-size: 20px;}
-p.draft-intro {position: fixed;
+p.draft-intro {
   position: fixed;
   left: 40px;
   bottom: 0;
@@ -63,6 +63,21 @@ article::after {
 } */
 hr {border-bottom: 3px solid #0068FF;}
 
+#draggable{
+  position: absolute;
+  z-index: 9;
+
+}
+
+.cyborg{
+  /* float:left; */
+  position:absolute;
+  left: 40px;
+  bottom: 150px;
+  height:50%;
+  width: 50%;
+}
+
 .meta {text-transform: uppercase; font-family: Arial, Courier New, Source Sans Pro, sans-serif; font-size: 10px; letter-spacing: .15em;}
 .meta a:hover {color: #333;}
 
@@ -71,4 +86,4 @@ hr {border-bottom: 3px solid #0068FF;}
 
 footer .inline-list li {margin-right: 40px;}
 footer a {border: none; color: #0068FF;}
-footer {margin: 0 auto; position: absolute; bottom: 55%; right: -255px; padding: 40px 0 0 0; width: 600px; -webkit-transform: rotate(-90deg);}
+footer {margin: 0 auto; position: absolute; bottom: 55%; right: -235px; padding: 40px 0 0 0; width: 600px; -webkit-transform: rotate(-90deg);}
