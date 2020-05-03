@@ -15,6 +15,9 @@ h1{
   text-align: center;
   float:left
 }
+h3{
+  font-weight: bold;
+}
 
 .wrapper {box-sizing: border-box; height: 100%; overflow: auto; }
 .monotype {
@@ -38,11 +41,53 @@ p.draft-intro {
   font-weight: 900;
   padding: 12px;
   border: 4px solid #ff895c;
-  line-height: 22px}
+  line-height: 22px
+}
+@media screen and (max-width: 900px) {
+  .name{
+    display: inline-block;
+  }
+  .container{
+    margin: 0 auto;
+      width:auto !important;
+      padding: 20px 12px 50px;
+      overflo
+  }
+  h2.monotype{
+    position:  inherit;
+  }
+  p.draft-intro {
+    position:  inherit;
+    /* bottom: 100%; */
+    width: 100%;
+    margin-top: 50px;
+    /* padding-right: 50px */
+  }
+}
+@media screen and (max-width: 600px) {
+  .name{
+    display: inline-block;
+  }
+  .container{
+    margin: 0 auto;
+      width:auto !important;
+      padding: 20px 12px 50px;
+      overflo
+  }
+  p{
+    width:auto;
+  }
+  p.draft-intro {
+    position:  inherit;
+    /* bottom: 100%; */
+    width: 100%;
+    margin-top: 50px;
+    /* padding-right: 50px */
+  }
+}
+.name {font-family: 'IBM Plex Mono', monospace; font-size: 45px; font-weight: 600; text-transform: uppercase;   width: 200px; line-height: 50px; padding: 50px;  margin: 20px; padding: 12px; border: 4px solid #0068FF; color: #0068FF; }
 
-.name {font-family: 'IBM Plex Mono', monospace; font-size: 45px; text-transform: uppercase;   width: 200px; line-height: 50px; padding: 50px;  margin: 20px; padding: 12px; border: 4px solid #0068FF; color: #0068FF; }
-
-.container {margin: 0 auto; width: 700px; padding: 120px 12px 50px; overflow: auto;}
+.container {margin: 0 auto; width: 700px; padding: 50px 12px 50px; overflow: auto;}
 article {padding: 30px;}
 /* TODO find better cross-platform characters */
 /* article::before {
@@ -62,7 +107,13 @@ article::after {
   font-size: 44px;
 } */
 hr {border-bottom: 3px solid #0068FF;}
+.cpjam{
 
+  text-transform: uppercase;
+  background-color: #ffc5b0;
+  line-height: 30px;
+  padding: 8px;
+}
 #draggable{
   position: absolute;
   z-index: 9;
@@ -86,4 +137,4 @@ hr {border-bottom: 3px solid #0068FF;}
 
 footer .inline-list li {margin-right: 40px;}
 footer a {border: none; color: #0068FF;}
-footer {margin: 0 auto; position: absolute; bottom: 55%; right: -235px; padding: 40px 0 0 0; width: 600px; -webkit-transform: rotate(-90deg);}
+footer {margin: 0 auto; position: absolute; bottom: 55%; right: -235px; padding: 50px 0 0 0; width: 600px; -webkit-transform: rotate(-90deg);}
